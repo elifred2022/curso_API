@@ -1,5 +1,5 @@
-const API_URL_random = "https://api.thecatapi.com/v1/images/search?limit=2&api_key=75598d5f-19d1-4c23-b064-b76ce65b39b5"; //aca usamos querys "?limit=3 q significa maximo de imagenes 3"
-const API_URL_favorites = "https://api.thecatapi.com/v1/images/search?limit=2&api_key=75598d5f-19d1-4c23-b064-b76ce65b39b5";
+const API_URL_random = 'https://api.thecatapi.com/v1/images/search?limit=2&api_key=75598d5f-19d1-4c23-b064-b76ce65b39b5'; 
+const API_URL_favorites = 'https://api.thecatapi.com/v1/images/search?limit=2&api_key=75598d5f-19d1-4c23-b064-b76ce65b39b5';
 
 const spanError = document.getElementById("error");
 
