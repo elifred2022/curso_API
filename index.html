@@ -7,12 +7,34 @@
     <title>Gatitos aleatorios</title>
 </head>
 <body>
-    <h1>Gatitos aleatorios</h1>
+    <h1>Michis app</h1>
 
-    <img id="img1" width="150" alt="son imagenes de gatitos">
-    <img id="img2" width="150" alt="son imagenes de gatitos">
-    <img id="img3" width="150" alt="son imagenes de gatitos">
-    <button onclick="reload()">Recargar</button>
+    <span id="error"></span>
+
+    <section id="randomMichis">
+        <h2>Gatitos aleatorios</h2>
+        <article>
+            <img id="img1" width="150" alt="son imagenes de gatitos">
+            <button>Guardar michi en favoito</button>
+        </article>
+        <article>
+            <img id="img2" width="150" alt="son imagenes de gatitos">
+            <button>Guardar michi en favoito</button>
+        </article>
+       
+
+    </section>
+       
+    
+    <button onclick="loadRandomMichis()">Recargar</button>
+
+    <section id="favoritesMichis">
+        <h2>Favoitos</h2>
+        <article>
+            <img id="img1" width="150" alt="son imagenes de gatitos">
+            <button>Sacar a michi de favoito</button>
+        </article>
+    </section>
 
     <script src="./main.js"></script>
 </body>
