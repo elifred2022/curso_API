@@ -18,4 +18,4 @@ MAQUETACION DEL PROYECTO
 metodos HTTP: 
 - GET, POST, PUT Y PATCH, DELETE
 
-quede en video 10
+# metodo post
