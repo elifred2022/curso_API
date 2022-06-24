@@ -18,4 +18,4 @@ MAQUETACION DEL PROYECTO
 metodos HTTP: 
 - GET, POST, PUT Y PATCH, DELETE
 
-# metodo post
+# visto metodo GET 23/06/22
