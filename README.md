@@ -19,3 +19,8 @@ metodos HTTP:
 - GET, POST, PUT Y PATCH, DELETE
 
 # visto metodo GET 23/06/22
+
+# clase 28/06/2022 post
+visto clase post
+clase manipulacion dinamica DOM
+
