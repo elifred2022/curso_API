@@ -24,3 +24,7 @@ metodos HTTP:
 visto clase post
 clase manipulacion dinamica DOM
 
+# clase DELET
+
+vi video 12...
+
