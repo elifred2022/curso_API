@@ -28,3 +28,18 @@ clase manipulacion dinamica DOM
 
 vi video 12...
 
+# tipos de headers clase 13
+
+- content type*
+- Authorization*
+- Cokies
+- Location
+- Etc.
+
+# API KEY clase 14
+- query parameter:
+?api:key=ABC123
+
+- Authorization header:
+X-API-Key: ABC123
+
