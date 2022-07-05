@@ -43,3 +43,47 @@ vi video 12...
 - Authorization header:
 X-API-Key: ABC123
 
+# HEADERS CONTENT-TYPE
+video 15
+aplpiation;
+applicatios/json
+application/xml
+application/zip
+application/x-www-form-urlencoded
+
+Audios;
+audio/mpeg
+audio/x-ms-wma
+audio/vnd.rn-realaudio
+audio/x-wav
+
+imagen;
+image/gif
+image/jpeg
+image/png
+image/x-icon
+image/svg+xml
+
+multipar;
+multipar/mixed
+multipar/alternative
+multipar/related
+multipar/form-data
+
+text;
+text/css
+text/csv
+text/html
+text/plain  "no lo soporta"
+text/xml
+
+videos;
+video/mpeg
+video/mp4
+video/quicktime
+video/webm
+
+vnd;
+application/vnd.ms-excel
+application/vnd.ms-powerpoint
+application/msword
