@@ -1,7 +1,7 @@
 const API_URL_RANDOM = 'https://api.thecatapi.com/v1/images/search?limit=2';
 const API_URL_FAVOTITES = 'https://api.thecatapi.com/v1/favourites';
-const API_URL_FAVOTITES_DELETE = (id) => 'https://api.thecatapi.com/v1/favourites/${id}?api_key=c08d415f-dea7-4a38-bb28-7b2188202e46';
-const API_URL_UPLOAD = 'https://api.thecatapi.com/v1/images/upload';
+const API_URL_FAVOTITES_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}?api_key=75598d5f-19d1-4c23-b064-b76ce65b39b5`;
+const API_URL_UPLOAD = 'https://api.thecatapi.com/v1/images/upload'; 
 
 
 
@@ -32,7 +32,7 @@ async function loadFavouriteMichis() {
   const res = await fetch(API_URL_FAVOTITES, {
     method: 'GET',
     headers: {
-      'X-API-KEY': 'c08d415f-dea7-4a38-bb28-7b2188202e46',
+      'X-API-KEY': '75598d5f-19d1-4c23-b064-b76ce65b39b5',
     }
   });
   const data = await res.json();
@@ -73,7 +73,7 @@ async function saveFavouriteMichi(id) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'X-API-KEY': 'c08d415f-dea7-4a38-bb28-7b2188202e46',
+      'X-API-KEY': '75598d5f-19d1-4c23-b064-b76ce65b39b5',
     },
     body: JSON.stringify({
       
@@ -95,7 +95,7 @@ async function deleteFavouriteMichi(id) {
   const res = await fetch(API_URL_FAVOTITES_DELETE(id), {
     method: 'DELETE',
     headers: {
-      'X-API-KEY': 'c08d415f-dea7-4a38-bb28-7b2188202e46',
+      'X-API-KEY': '75598d5f-19d1-4c23-b064-b76ce65b39b5',
     }
   });
   const data = await res.json();
@@ -118,7 +118,7 @@ async function uploadMichiPhoto() { /* pari no me funcionaba el boton de subir m
     method: 'POST',
     headers:{
       /*'Content-Type': 'Multipart/form-data',*/
-      'X-API-KEY': 'c08d415f-dea7-4a38-bb28-7b2188202e46',
+      'X-API-KEY': '75598d5f-19d1-4c23-b064-b76ce65b39b5',
     },
     body: formData,
   })
