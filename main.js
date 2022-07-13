@@ -1,6 +1,9 @@
 const API_URL_RANDOM = 'https://api.thecatapi.com/v1/images/search?limit=2';
 const API_URL_FAVOTITES = 'https://api.thecatapi.com/v1/favourites';
-const API_URL_FAVOTITES_DELETE = (id) => `https://api.thecatapi.com/v1/favourites/${id}?api_key=c08d415f-dea7-4a38-bb28-7b2188202e46`;
+const API_URL_FAVOTITES_DELETE = (id) => 'https://api.thecatapi.com/v1/favourites/${id}?api_key=c08d415f-dea7-4a38-bb28-7b2188202e46';
+const API_URL_UPLOAD = 'https://api.thecatapi.com/v1/images/upload';
+
+
 
 const spanError = document.getElementById('error')
 
@@ -105,12 +108,23 @@ async function deleteFavouriteMichi(id) {
   }
 }
 
-async function uploadMichiPhoto() {
+async function uploadMichiPhoto() { /* pari no me funcionaba el boton de subir michi poe q no coloque los () */
   const form = document.getElementById('uploadingForm')
-  const formData = new FormData();
+  const formData = new FormData(form);
 
-  console.log(formData.get('file'))
+  console.log(formData.get('file')) 
+  
+  const res = await fetch(API_URL_UPLOAD, {
+    method: 'POST',
+    headers:{
+      /*'Content-Type': 'Multipart/form-data',*/
+      'X-API-KEY': 'c08d415f-dea7-4a38-bb28-7b2188202e46',
+    },
+    body: formData,
+  })
+
 }
+
 
 loadRandomMichis();
 loadFavouriteMichis();

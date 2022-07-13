@@ -2,6 +2,10 @@
 
 pagina de API: https://thecatapi.com/
 
+https://docs.thecatapi.com/authentication
+
+https://docs.thecatapi.com/image-upload
+
 
 HTTP status codes : https://httpstatusdogs.com/
 
