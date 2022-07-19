@@ -105,3 +105,38 @@ https://axios-http.com/docs/intro
 -node-feth (para Node.js)
 -request (para Node.js)
 -Etc 
+
+# CORS video 18
+
+-cors
+-no-cors
+-same-origin
+
+cache;
+-default
+-no-store
+-reload
+-no-cache
+-force-cache
+-only-if-cached
+
+Redirect;
+-follow
+-error
+-manual
+
+bibilioteca de informacion;
+
+https://developer.mozilla.org/en-US/docs/Web/API/Request/cache
+
+https://developer.mozilla.org/en-US/docs/Web/API/fetch
+
+https://developer.mozilla.org/en-US/docs/Web/API/Request
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching#freshness
+
+https://developer.mozilla.org/en-US/docs/Web/API/Headers
+
+https://developer.mozilla.org/es/docs/Web/HTTP/Caching#actualizaci%C3%B3n
+
+https://developer.mozilla.org/en-US/docs/Web/API/Response
