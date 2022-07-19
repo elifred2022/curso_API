@@ -105,3 +105,41 @@ https://axios-http.com/docs/intro
 -node-feth (para Node.js)
 -request (para Node.js)
 -Etc 
+
+# REST VIDEO 19
+
+senBeacon:
+- no espera una respuesta del servidor
+- es buena idea para analytics
+
+GraphQL; (el profesor recomienda tomar este curso)
+- Empowered clients
+- All reques on the same endpoint
+
+Web Sockets
+
+- dejar el "tunel abierto"
+- util para aplicaciones real-time
+(omunicaion "instantanea")
+
+Web 3.0
+
+- Dapps: apliaciones descentralizadas
+
+cursos recomendados
+
+https://platzi.com/blog/introduccion-a-graphql/
+
+https://platzi.com/blog/rest-o-graphql/
+
+https://platzi.com/cursos/graphql/
+
+https://platzi.com/blog/websockets-en-nodejs/
+
+https://platzi.com/cursos/intro-dapps/
+
+https://platzi.com/blog/el-rey-ha-muerto-larga-vida-a-graphql/
+
+https://platzi.com/cursos/frontend-dapps/
+
+https://platzi.com/cursos/socket-io/
