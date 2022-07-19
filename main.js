@@ -82,7 +82,7 @@ async function saveFavouriteMichi(id) {
   //   method: 'POST',
   //   headers: {
   //     'Content-Type': 'application/json',
-  //     'X-API-KEY': 'c08d415f-dea7-4a38-bb28-7b2188202e46',
+  //     'X-API-KEY': '75598d5f-19d1-4c23-b064-b76ce65b39b5',
   //   },
   //   body: JSON.stringify({
   //     image_id: id
@@ -101,16 +101,20 @@ async function saveFavouriteMichi(id) {
 }
 
 async function deleteFavouriteMichi(id) {
-  const res = await fetch(API_URL_FAVOTITES_DELETE(id), {
+  const { data, status } = await api.delete(`/favourites/${id}`, {
+    image_id: id,
+  });
+
+  /*const res = await fetch(API_URL_FAVOTITES_DELETE(id), {
     method: 'DELETE',
     headers: {
       'X-API-KEY': '75598d5f-19d1-4c23-b064-b76ce65b39b5',
     }
   });
-  const data = await res.json();
+  const data = await res.json();*/
   
-  if (res.status !== 200) {
-    spanError.innerHTML = "Hubo un error: " + res.status + data.message;
+  if (status !== 200) {
+    spanError.innerHTML = "Hubo un error: " + status + data.message;
   } else {
     console.log('michi eliminado de favoritos')
     loadFavouriteMichis();
@@ -118,7 +122,12 @@ async function deleteFavouriteMichi(id) {
 }
 
 async function uploadMichiPhoto() { /* pari no me funcionaba el boton de subir michi poe q no coloque los () */
-  const form = document.getElementById('uploadingForm')
+
+/*const { data, status } = await api.post('/images/upload', {
+  image_id: file,
+}); forma del Axios no funciono => revisar */
+
+const form = document.getElementById('uploadingForm')
   const formData = new FormData(form);
 
   console.log(formData.get('file')) 
@@ -126,13 +135,12 @@ async function uploadMichiPhoto() { /* pari no me funcionaba el boton de subir m
   const res = await fetch(API_URL_UPLOAD, {
     method: 'POST',
     headers:{
-      /*'Content-Type': 'Multipart/form-data',*/
+      
       'X-API-KEY': '75598d5f-19d1-4c23-b064-b76ce65b39b5',
     },
     body: formData,
   })
-
-}
+} 
 
 
 loadRandomMichis();
