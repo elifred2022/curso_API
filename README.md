@@ -96,3 +96,12 @@ application/msword
 
 todavia no me carga el gato en el servidor (12/7/2022)
 
+# HTTP CLIENTS video 17
+
+https://axios-http.com/docs/intro
+
+-Axios*
+-Trae.js
+-node-feth (para Node.js)
+-request (para Node.js)
+-Etc 
